@@ -1,0 +1,17 @@
+.grid-content {
+  background: #ffffff;
+  padding: 15px;
+  .grid-style{
+      height: 220px;
+      overflow-x: auto;
+  }
+}
+
+.img-style {
+  width: auto;
+  height: 100%;
+  img {
+    width: 100%;
+    background: #f1f2f3;
+  }
+}

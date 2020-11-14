@@ -1,0 +1,22 @@
+@import '~normalize.css';
+@import './config/_fonts.scss';
+@import './config/_colors.scss';
+@import './config/_grids.scss';
+@import './config/_resets.scss';
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    padding: 5px;
+    background: #f1f2f3;
+    .clear-fix{
+        clear: both;
+    }
+    .text-center{
+        text-align: center;
+        margin:0 auto;
+    }
+    .container{
+        margin-bottom: 25px;
+    }
+}
+

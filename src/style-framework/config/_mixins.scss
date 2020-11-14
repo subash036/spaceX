@@ -1,0 +1,27 @@
+// Mixin
+@mixin column-span($column-span, $push:0) { 
+  
+    $grid-width:    100%;
+    $column-calc: ($grid-width / $total-columns * $column-span); 
+    $column-width: $column-calc - ($margins * 2); 
+    $offset: ($column-calc) / ($column-span) * $push + $margins;
+    // @include box-sizing(border-box);
+    box-sizing: border-box;
+    // MARGINS NEED TO BE ADDED FOR OFFSET
+    float: left;
+    width: $column-width; 
+    padding: $padding;
+    @if $push == 0 {
+      margin: $margins;
+      // margin-left: $margins;
+      // margin-right: $margins;
+    } @else {
+      margin: $margins;
+      // margin-left: $margins;
+      // margin-right: $margins;
+      margin-left: $offset;
+    }
+    // for testing only below
+    outline: 1px dashed #f06;
+      
+  }

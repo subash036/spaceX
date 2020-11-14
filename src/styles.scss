@@ -1,1 +1,15 @@
+@import './style-framework/config/font-size';
+@import './style-framework/custom-bootstrap.scss';
 /* You can add global styles to this file, and also import other style files */
+h1 { color: $color-black; }
+p { color: $color-green; }
+a { color: $color-blue; }
+.no-records{
+    font-size: $font-14;
+    text-align: center;
+}
+
+.v-scroll{
+    height: 87vh;
+    overflow-x: auto;
+}

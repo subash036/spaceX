@@ -1,0 +1,17 @@
+@import "../../../style-framework//config/_colors";
+@import "../../../style-framework//config/_font-size";
+
+button{
+    background-color: #c3e09b;
+    display: inline-block;
+    outline: none;
+    border: 0;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: $font-12;
+    color: $color-black;
+    &.active{
+        background-color: $color-green;
+    }
+}

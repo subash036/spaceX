@@ -1,0 +1,14 @@
+<h3><strong>Filters</strong></h3>
+
+<h3 class="text-center">Launch Year</h3>
+<button [ngClass]="{'active': activeClass === item}" (click)="activeClass==item?activeClass=null:activeClass=item; sendFilterData(activeClass,'launch_year')" class="grid--5" *ngFor="let item of yearsList">{{item}}</button>
+<div class="clear-fix"></div>
+<h3 class="text-center">Successfull Launch</h3>
+<button [ngClass]="{'active': launchStatus===true}" (click)="launchStatus===true?launchStatus=null:launchStatus=true;sendFilterData(launchStatus, 'launch_success')" class="grid--5">Yes</button>
+<button [ngClass]="{'active': launchStatus===false}" (click)="launchStatus===false?launchStatus=null:launchStatus=false;sendFilterData(launchStatus, 'launch_success')" class="grid--5">No</button>
+<div class="clear-fix"></div>
+<h3 class="text-center">Successfull landing</h3>
+<!-- <toggle-button [id]="'landing-check'" [labelTrue]="'Yes'" [labelFalse]="'No'"></toggle-button> -->
+<button [ngClass]="{'active': landingStatus===true}" (click)="landingStatus===true?landingStatus=null:landingStatus=true;sendFilterData(landingStatus, 'land_success')" class="grid--5">Yes</button>
+<button [ngClass]="{'active': landingStatus===false}" (click)="landingStatus===false?landingStatus=null:landingStatus=false;sendFilterData(landingStatus, 'land_success')" class="grid--5">No</button>
+<div class="clear-fix"></div>
