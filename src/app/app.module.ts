@@ -9,6 +9,7 @@ import { FooterComponent } from './common/footer/footer.component';
 import { LoaderComponent } from './common/loader/loader.component';
 import { LoaderInterceptorService } from './_services/loader-interceptor.service';
 // import { VirtualScrollerModule } from 'ngx-virtual-scroller';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { LoaderInterceptorService } from './_services/loader-interceptor.service
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    DashboardModule
     // VirtualScrollerModule
   ],
   providers: [{

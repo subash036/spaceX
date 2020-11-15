@@ -19,7 +19,13 @@ describe('LoaderComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create Loader Component', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should create Loader Component and status should be false', () => {
+    const fixture = TestBed.createComponent(LoaderComponent);
+    const loaderComponent = fixture.debugElement.componentInstance;
+    expect(loaderComponent.show).toBeFalsy();
   });
 });
