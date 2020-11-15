@@ -1,9 +1,26 @@
+@import '../../../style-framework/config/colors';
+@import '../../../style-framework/config/font-size';
+
 .grid-content {
   background: #ffffff;
   padding: 15px;
+  border-radius: 5px;
   .grid-style{
       height: 220px;
       overflow-x: auto;
+      h3{
+        color: $color-blue !important;
+        font-weight: bolder !important;
+        font-size: $font-14 !important;
+      }
+      h4{
+        font-weight: bolder;
+        span{
+          color: $color-blue-lite;
+          font-weight: normal;
+          padding-left: 5px;
+        }
+      }
       strong{
         font-size: 14px;
         font-weight: bolder;

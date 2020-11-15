@@ -4,11 +4,7 @@ $total-columns: 10; // No. of Columns
 $margins: 1%; // Column Margins: left and right
 $padding: 1%; // Column padding
 
-  
-  // Layout Test
-  
-  // Mobile First
- 
+// created grid css
 
   div[class='grid--'], button[class='grid--']{
     display: inline-block;
@@ -79,4 +75,5 @@ $padding: 1%; // Column padding
   .filters{
     background: #ffffff;
     padding: 15px;
+    border-radius: 5px;
   }
