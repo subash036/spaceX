@@ -1,31 +1,17 @@
 <div class="container">
-        <!-- Content -->
-        <h1>SpaceX Launch Programs</h1>
-        <div class="grid--2 row">
-            <div class="filters">
-                <app-filters (sendYearEvent)="receiveYear($event)" [yearsFrom]="yearsFrom"></app-filters>
-            </div>
+    <!-- Content -->
+    <h1>SpaceX Launch Programs</h1>
+    <div class="grid--2 row">
+        <div class="filters">
+            <app-filters (sendYearEvent)="receiveYear($event)" [yearsFrom]="yearsFrom"></app-filters>
         </div>
-        <div class="grid--8 row">
-            <div *ngIf="launchList && launchList.length<=0" class="no-records">No records found</div>
-            <div *ngIf="!launchList || launchList.length>0" class="v-scroll">
-                <!-- <virtual-scroller #scroll [items]="items"> -->
-                    <app-grid [eachItem]="eachItem" *ngFor="let eachItem of launchList"></app-grid>
-                <!-- <div class="grid--2-5 grid-content" *ngFor="let eachItem of launchList">
-                    <div class="img-style">
-                        <img [src]="eachItem.links.mission_patch" alt=""/>
-                    </div>
-                    <h3>{{eachItem.mission_name}}</h3>
-                    <h4><strong>Mission Ids:</strong>{{eachItem.mission_id|json}}</h4>
-                    <h4><strong>Launch Year:</strong>{{eachItem.launch_year}}</h4>
-                    <h4><strong>Successfull Launch:</strong>{{eachItem.launch_success}}</h4>
-                    <h4><strong>Successfull Landing:</strong>{{eachItem.land_success}}</h4>
-                </div> -->
-                <!-- </virtual-scroller> -->
-            </div>
-    
-    
-            <div class="clear-fix"></div>
+    </div>
+    <div class="grid--8 row">
+        <div *ngIf="launchList && launchList.length<=0" class="no-records">No records found</div>
+        <div *ngIf="!launchList || launchList.length>0" class="v-scroll">
+            <app-grid [eachItem]="eachItem" *ngFor="let eachItem of launchList"></app-grid>
         </div>
         <div class="clear-fix"></div>
+    </div>
+    <div class="clear-fix"></div>
 </div>

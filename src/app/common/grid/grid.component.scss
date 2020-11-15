@@ -4,6 +4,10 @@
   .grid-style{
       height: 220px;
       overflow-x: auto;
+      strong{
+        font-size: 14px;
+        font-weight: bolder;
+      }
   }
 }
 

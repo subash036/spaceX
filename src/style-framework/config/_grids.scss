@@ -12,6 +12,7 @@ $padding: 1%; // Column padding
 
   div[class='grid--'], button[class='grid--']{
     display: inline-block;
+    border-radius: 5px;
   }
   .grid--5{
     @include column-span(5)
@@ -31,7 +32,26 @@ $padding: 1%; // Column padding
  
   @media all and (max-width: 700px) {
     .grid--5{
+      @include column-span(5)
+    }
+    .grid--10{
       @include column-span(10)
+    }
+    .grid--2{
+      @include column-span(10)
+    }
+    .grid--2-5{
+      @include column-span(10)
+    }
+    .grid--8{
+      @include column-span(10)
+    }
+   
+  }
+
+  @media all and (min-width: 701px) and (max-width: 1080px) {
+    .grid--5{
+      @include column-span(5)
     }
     .grid--10{
       @include column-span(10)

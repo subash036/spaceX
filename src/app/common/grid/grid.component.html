@@ -8,7 +8,7 @@
             <li *ngFor="let eachId of eachItem?.mission_id">{{eachId}}</li>
         </ul></h4>
         <h4><strong>Launch Year:</strong>{{eachItem?.launch_year}}</h4>
-        <h4><strong>Successfull Launch:</strong>{{eachItem?.launch_success}}</h4>
-        <h4><strong>Successfull Landing:</strong>{{eachItem?.land_success}}</h4>
+        <h4><strong>Successfull Launch:</strong>{{eachItem?.launch_success?'Yes':'No'}}</h4>
+        <h4><strong>Successfull Landing:</strong>{{eachItem?.land_success?'Yes':'No'}}</h4>
     </div>
 </div>
