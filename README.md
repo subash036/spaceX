@@ -27,6 +27,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Some More Details
 * Used individual componants for plug and play
 * Lazy loading is implemented to render things on demand
+* Spaces are reduced to give user more space for activity
 * Filters/grids components can be used acrross the application by just importing module
 * CSS pre-processor(SCSS) is used to boost css writing method
 * Created custom frameworks grids and css framework

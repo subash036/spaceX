@@ -3,12 +3,14 @@
     <h1>SpaceX Launch Programs</h1>
     <div class="grid--2 row">
         <div class="filters">
+            <!-- filter component/retuns event with clicked data -->
             <app-filters (sendYearEvent)="receiveYear($event)" [yearsFrom]="yearsFrom"></app-filters>
         </div>
     </div>
     <div class="grid--8 row">
         <div *ngIf="launchList && launchList.length<=0" class="no-records">No records found</div>
         <div *ngIf="!launchList || launchList.length>0" class="v-scroll">
+            <!-- Grids component/ Input will each object -->
             <app-grid [eachItem]="eachItem" *ngFor="let eachItem of launchList"></app-grid>
         </div>
         <div class="clear-fix"></div>

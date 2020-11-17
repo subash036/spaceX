@@ -9,6 +9,7 @@
         </ul></h4>
         <h4><strong>Launch Year:</strong><span>{{eachItem?.launch_year}}</span></h4>
         <h4><strong>Successfull Launch:</strong><span>{{eachItem?.launch_success?'Yes':'No'}}</span></h4>
-        <h4><strong>Successfull Landing:</strong><span>{{eachItem?.land_success?'Yes':'No'}}</span></h4>
+        <!-- abcd{{eachItem?.rocket?.first_stage?.cores[0]?.land_success |json}} -->
+        <h4><strong>Successfull Landing:</strong><span>{{(eachItem?.rocket?.first_stage?.cores[0]?.land_success)?'Yes':'No'}}</span></h4>
     </div>
 </div>

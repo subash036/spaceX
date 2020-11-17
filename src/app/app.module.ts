@@ -10,6 +10,7 @@ import { LoaderComponent } from './common/loader/loader.component';
 import { LoaderInterceptorService } from './_services/loader-interceptor.service';
 // import { VirtualScrollerModule } from 'ngx-virtual-scroller';
 import { DashboardModule } from './dashboard/dashboard.module';
+// import { NgScrollbarModule } from 'ngx-scrollbar';
 
 @NgModule({
   declarations: [
@@ -21,8 +22,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    DashboardModule
-    // VirtualScrollerModule
+    DashboardModule,
+    // NgScrollbarModule
   ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

@@ -14,7 +14,7 @@ export class DashboardService {
     // format from object to query string
     let queryString = Object.keys(filterObject).map(key => filterObject[key]!==null?key + '=' + filterObject[key]:null).filter(data=>data).join('&');
     return this.http.get<any>(`${environment.baseUrl}launches?${queryString}`).pipe(map((data)=>{
-      // data['land_success'] = data?.rocket?.first_stage?.cores;
+      // data['land_success'] = data?.rocket?.first_stage?.cores[0];
       return data;
     }));
   }
