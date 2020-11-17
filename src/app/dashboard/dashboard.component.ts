@@ -17,9 +17,14 @@ export class DashboardComponent implements OnInit {
   }
   ngOnInit() {
   }
+
+  // on filter click load
   receiveYear(filterObject:object):void{
-    this.listHandler(filterObject)
+    this.listHandler(filterObject);
+
   }
+
+  // intial load
   listHandler(filterObject:object):void{
     this.dashboardService.getLaunchList({...filterObject, ...{limit:100}}).subscribe(launchList=>{
       console.log(`SHIVA: DashboardComponent -> ngOnInit -> launchList`, launchList);
