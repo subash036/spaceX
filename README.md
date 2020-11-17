@@ -1,4 +1,4 @@
-# SpaceX
+# Amwos
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.21.
 
@@ -22,6 +22,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
+## Checkout Working [DEMO](https://spacex-01.herokuapp.com/spaceX/list)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Some More Details
+* Used individual componants for plug and play
+* Lazy loading is implemented to render things on only demand
+* Filters/grids components can be used acrross the application by just importing module
+* CSS pre-processor(SCSS) is used to boost css writing method
+* Created custom frameworks grids and css framework
+* Same project is deployed in Heroku with CI/CD implementation
+
+
